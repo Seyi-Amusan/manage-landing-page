@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <!-- <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css"> -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
+  
+  
+  <link rel="stylesheet" href="css/output.css">
+  
+  <title>Frontend Mentor | Manage landing page</title>
+
+  
+  <!-- <script src="node_modules/@glidejs/glide/dist/glide.min.js"></script> -->
+  <script defer src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+  <script defer src="index.js"></script>
+
+</head>
+<body>
+
+  <header>
+    <nav class="w-4/5 lg:w-full mx-auto lg:px-28 mt-10 mb-8">
+      <div class="relative container mx-auto flex justify-between items-center">
+
+        <div class="flex-shrink-0 ">
+          <img src="images/logo.svg" alt="Logo" class="h-8">
+        </div>
+        
+        <div style="color: hsl(233, 12%, 13%);" class=" hidden lg:flex lg:items-center lg:space-x-6">
+          <a href="#" class="">Pricing</a>
+          <a href="#" class="">Products</a>
+          <a href="#" class="">About Us</a>
+          <a href="#" class="">Careers</a>
+          <a href="#" class="">Community</a>
+        </div>
+        
+        <button style="background-color: hsl(12, 88%, 59%);" class="hidden lg:inline-block text-white px-5 py-2 rounded-3xl">Get Started</button>
+    
+        <button id="mobileMenuButton" class="block  lg:hidden" >
+          <svg class="h-9 w-9" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+          </svg>
+      </button>
+
+        <div  visible="false" style="box-shadow: 0 25px 50px -8px rgb(0 0 0 / 0.25); color: hsl(233, 12%, 13%);" id="mobileMenu" class=" hidden opacity-0 mt-7 rounded-lg absolute top-3 mx-auto md:right-0 md:-translate-x-0 left-1/2 -translate-x-1/2 transition-all duration-300 ease-in-out lg:hidden text-center bg-white shadow-2xl gap-6 py-7 w-80">
+          <a href="#" class="">Pricing</a>
+          <a href="#" class="">Products</a>
+          <a href="#" class="">About Us</a>
+          <a href="#" class="">Careers</a>
+          <a href="#" class="">Community</a>
+        </div>
+        
+      </div>
+    </nav>
+    
+    <div class="w-4/5 lg:w-full flex flex-col md:flex-row md:items-center mx-auto lg:px-28 mb-16">
+      <div class="mb-4 md:mb-0 md:order-2 ">
+        <img  src="images/illustration-intro.svg" alt="">
+      </div>
+
+      <div class="text-center md:text-start md:order-1">
+        <h1 class="text-4xl font-medium mb-3">Bring everyone together to build better products.</h1>
+        <p class="font-light mb-5">Manage makes it simple for software teams to plan day-to-day 
+          tasks while keeping the larger team goals in view.
+        </p>
+        <button style="background-color: hsl(12, 88%, 59%);" class="text-white px-5 py-2 rounded-3xl">Get Started</button>
+      </div>
+    </div>
+    
+  </header>
+
+
+  <main>
+    <section class="grid md:grid-flow-col gap-y-6 gap-x-12">
+      <div class="text-center md:text-start">
+        <h2 class="text-3xl font-medium mb-3">What’s different about Manage?</h2>
+        <p class="font-light mb-5">Manage provides all the functionality your team needs, without 
+          the complexity. Our software is tailor-made for modern digital 
+          product teams. 
+        </p>
+      </div>
+  
+      <div>
+
+        <div class="mb-7">
+          <div style="background-color: hsl(13, 100%, 96%);" class="rounded-tl-3xl rounded-bl-3xl flex items-center mb-3">
+            <p style="background-color: hsl(12, 88%, 59%); color: hsl(0, 0%, 98%)" class="px-5 h-9 flex items-center me-5 rounded-3xl">01</p>
+            <h3>Track company-wide progress</h3>
+          </div>
+          <p>See how your day-to-day tasks fit into the wider vision. Go from 
+            tracking progress at the milestone level all the way done to the 
+            smallest of details. Never lose sight of the bigger picture again.
+          </p>
+        </div>
+
+        <div class="mb-7">
+          <div style="background-color: hsl(13, 100%, 96%);" class="rounded-tl-3xl rounded-bl-3xl flex items-center mb-3">
+            <p style="background-color: hsl(12, 88%, 59%); color: hsl(0, 0%, 98%)" class="px-5 h-9 flex items-center me-5 rounded-3xl">02</p>
+            <h3>Advanced built-in reports</h3>
+          </div>
+          <p>Set internal delivery estimates and track progress toward company 
+            goals. Our customisable dashboard helps you build out the reports 
+            you need to keep key stakeholders informed.
+          </p>
+        </div>
+
+        <div>
+          <div style="background-color: hsl(13, 100%, 96%);" class="rounded-tl-3xl rounded-bl-3xl flex items-center mb-3">
+            <p style="background-color: hsl(12, 88%, 59%); color: hsl(0, 0%, 98%)" class="px-5 h-9 flex items-center me-5 rounded-3xl">03</p>
+            <h3>Everything you need in one place</h3>
+          </div>
+          <p>Stop jumping from one service to another to communicate, store files, 
+            track tasks and share documents. Manage offers an all-in-one team 
+            productivity solution.
+          </p>
+        </div>
+
+      </div>
+
+    </section>
+
+    <section class="text-center lg:mx-5">
+      <h2 class="text-3xl font-medium mb-3">What they’ve said</h2>
+
+      <div class="glide mb-7 relative ">
+        <div class="glide__track" data-glide-el="track">
+          <div class="glide__slides ">
+
+            <div class="glide__slide text-center">
+              <img class="h-12 mb-3 mx-auto rounded-full" src="images/avatar-anisha.png" alt="">
+              <h4 class="text-2xl font-medium mb-3">Anisha Li</h4>
+              <p>“Manage has supercharged our team’s workflow. The ability to maintain 
+                visibility on larger milestones at all times keeps everyone motivated.”
+              </p>
+            </div>
+            
+            <div class="glide__slide text-center">
+              <img class="h-12 mb-3 mx-auto rounded-full" src="images/avatar-ali.png" alt="">
+              <h4 class="text-2xl font-medium mb-3">Ali Bravo</h4>
+              <p>“We have been able to cancel so many other subscriptions since using 
+                Manage. There is no more cross-channel confusion and everyone is much 
+                more focused.”
+              </p>
+            </div>
+
+            <div class="glide__slide text-center">
+              <img class="h-12 mb-3 mx-auto rounded-full" src="images/avatar-richard.png" alt="">
+              <h4 class="text-2xl font-medium mb-3">Richard Watts</h4>
+              <p>“Manage allows us to provide structure and process. It keeps us organized 
+                and focused. I can’t stop recommending them to everyone I talk to!”
+              </p>
+            </div>
+
+            <div class="glide__slide text-center">
+              <img class="h-12 mb-3 mx-auto rounded-full" src="images/avatar-shanai.png" alt="">
+              <h4 class="text-2xl font-medium mb-3">Shanai Gough</h4>
+              <p>“Their software allows us to track, manage and collaborate on our projects 
+                from anywhere. It keeps the whole team in-sync without being intrusive.”
+              </p>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="glide__bullets lg:hidden" data-glide-el="controls[nav]">
+          <button style="border-color: hsl(12, 88%, 59%);" class="glide__bullet border rounded-full p-2 active" data-glide-dir="=0"></button>
+          <button style="border-color: hsl(12, 88%, 59%);" class="glide__bullet border rounded-full p-2"  data-glide-dir="=1"></button>
+          <button style="border-color: hsl(12, 88%, 59%);" class="glide__bullet border rounded-full p-2"  data-glide-dir="=2"></button>
+          <button style="border-color: hsl(12, 88%, 59%);" class="glide__bullet border rounded-full p-2"  data-glide-dir="=3"></button>
+        </div>
+      </div>
+
+      <button style="background-color: hsl(12, 88%, 59%);" class="text-white px-5 py-2 rounded-3xl">Get Started</button>
+
+    
+    </section>
+
+
+    <div style="background-color: hsl(12, 88%, 59%);" class="text-center md:text-start py-20 pb-14 px-9 md:px-28 md:flex justify-between w-full">
+      <h1 class="text-4xl font-semibold mb-3 md:mb-0" style="color: hsl(0, 0%, 98%);">Simplify how your team works today.</h1>
+      <button style="background-color: hsl(0, 0%, 98%); color: hsl(12, 88%, 59%);" class=" px-5 py-2 rounded-3xl">Get Started</button>
+    </div>
+  </main>
+
+  <footer style="background-color: hsl(228, 39%, 23%);" class="flex justify-center lg:justify-between flex-col lg:flex-row py-7 px-6 md:px-28">
+    
+   <form class="text-center lg:text-end mb-9 lg:mb-0 lg:order-3">
+    <div class="lg:mb-7">
+      <input type="text" placeholder="Updates in your inbox…" class="rounded-3xl py-2 px-5">
+      <button style="color: hsl(0, 0%, 98%); background-color: hsl(12, 88%, 59%);" class="px-5 py-2 rounded-3xl">GO</button>
+    </div>
+    <p style="color: hsl(0, 0%, 98%);"  class="text-center lg:text-end font-light text-sm hidden lg:inline-block">Copyright 2020. All Rights Reserved</p>
+   </form>
+
+    <div style="color: hsl(0, 0%, 98%);" class="flex justify-around mb-9 lg:mb-0 lg:order-2"> 
+      <ul class="grid gap-y-3 lg:me-24">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">About Us</a></li>
+      </ul>
+
+      <ul class="grid gap-y-3">
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Community</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+      </ul>
+    </div>
+
+    <div class="mb-9 md:mb-6 lg:mb-0 lg:order-1 flex flex-col">
+      <ul class="w-4/5 lg:w-full  mx-auto lg:mx-0 flex justify-around mb-6 lg:mb-0 lg:order-2">
+        <li><a href="#"><img class="h-7 md:h-5" src="images/icon-facebook.svg" alt=""></a></li>
+        <li><a href="#"><img class="h-7 md:h-5" src="images/icon-youtube.svg" alt=""></a></li>
+        <li><a href="#"><img class="h-7 md:h-5" src="images/icon-twitter.svg" alt=""></a></li>
+        <li><a href="#"><img class="h-7 md:h-5" src="images/icon-pinterest.svg" alt=""></a></li>
+        <li><a href="#"><img class="h-7 md:h-5" src="images/icon-instagram.svg" alt=""></a></li>
+      </ul>
+      <img class="mx-auto mb-0 md:mb-6" src="images/logo-white.svg" alt="">
+    </div>
+
+    <p style="color: hsl(0, 0%, 98%);"  class="text-center font-light text-lg lg:hidden">Copyright 2020. All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>

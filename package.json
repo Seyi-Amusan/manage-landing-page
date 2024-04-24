@@ -1,0 +1,11 @@
+{
+  "devDependencies": {
+    "tailwindcss": "^3.4.3"
+  },
+  "scripts": {
+    "build-css": "npx tailwindcss -i ./css/input.css -o ./css/output.css --watch"
+  },
+  "dependencies": {
+    "@glidejs/glide": "^3.6.0"
+  }
+}

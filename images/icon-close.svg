@@ -1,0 +1,8 @@
+<svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+  <!-- Longest bar -->
+  <rect x="4" y="6" width="16" height="2" fill="black" />
+  <!-- Middle bar -->
+  <rect x="4" y="11" width="12" height="2" fill="black" />
+  <!-- Shortest bar -->
+  <rect x="4" y="16" width="8" height="2" fill="black" />
+</svg>

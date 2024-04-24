@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+h1, h2, h3{
+    color: hsl(233, 12%, 13%);
+}
+
+p{
+    color: hsl(227, 12%, 61%);
+}
+
+section{
+    @apply w-4/5 lg:w-auto mx-auto lg:mx-28 mb-16;
+}
+
+.glide__bullet.active {
+    background-color: hsl(12, 88%, 59%);
+}
+
+#mobileMenu > * {
+    @apply hover:bg-gray-100 py-2
+}
