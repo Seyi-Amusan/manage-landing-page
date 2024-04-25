@@ -22,15 +22,16 @@
 </head>
 <body>
 
-  <header>
-    <nav class="w-4/5 lg:w-full mx-auto lg:px-28 mt-10 mb-8">
+  <header class="relative mb-9">
+    <img class="w-[55%] hidden md:block absolute right-[-15%] top-[-43%] -z-10" src="images/bg-tablet-pattern.svg" alt="">
+    <nav class="w-11/12 lg:w-full mx-auto lg:px-28 mt-10 mb-8">
       <div class="relative container mx-auto flex justify-between items-center">
 
         <div class="flex-shrink-0 ">
           <img src="images/logo.svg" alt="Logo" class="h-8">
         </div>
         
-        <div style="color: hsl(233, 12%, 13%);" class=" hidden lg:flex lg:items-center lg:space-x-6">
+        <div id="desktopMenu" style="color: hsl(233, 12%, 13%);" class=" hidden lg:flex lg:items-center lg:space-x-6">
           <a href="#" class="">Pricing</a>
           <a href="#" class="">Products</a>
           <a href="#" class="">About Us</a>
@@ -38,7 +39,7 @@
           <a href="#" class="">Community</a>
         </div>
         
-        <button style="background-color: hsl(12, 88%, 59%);" class="hidden lg:inline-block text-white px-5 py-2 rounded-3xl">Get Started</button>
+        <button class="hidden lg:inline-block btn">Get Started</button>
     
         <button id="mobileMenuButton" class="block  lg:hidden" >
           <svg class="h-9 w-9" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -46,7 +47,7 @@
           </svg>
       </button>
 
-        <div  visible="false" style="box-shadow: 0 25px 50px -8px rgb(0 0 0 / 0.25); color: hsl(233, 12%, 13%);" id="mobileMenu" class=" hidden opacity-0 mt-7 rounded-lg absolute top-3 mx-auto md:right-0 md:-translate-x-0 left-1/2 -translate-x-1/2 transition-all duration-300 ease-in-out lg:hidden text-center bg-white shadow-2xl gap-6 py-7 w-80">
+        <div  visible="false" style="box-shadow: 0 25px 50px -8px rgb(0 0 0 / 0.25); color: hsl(233, 12%, 13%);" id="mobileMenu" class="grid opacity-0 mt-7 rounded-lg absolute top-3 mx-auto md:right-0 md:-translate-x-0 left-1/2 -translate-x-1/2 transition-all duration-500 ease-in-out lg:hidden text-center bg-white shadow-2xl gap-6 py-7 w-80">
           <a href="#" class="">Pricing</a>
           <a href="#" class="">Products</a>
           <a href="#" class="">About Us</a>
@@ -57,8 +58,8 @@
       </div>
     </nav>
     
-    <div class="w-4/5 lg:w-full flex flex-col md:flex-row md:items-center mx-auto lg:px-28 mb-16">
-      <div class="mb-4 md:mb-0 md:order-2 ">
+    <div class="w-11/12 lg:w-full flex flex-col md:flex-row md:items-center mx-auto lg:px-28 mb-16">
+      <div class="mb-4 md:mb-0 md:order-2 flex justify-center">
         <img  src="images/illustration-intro.svg" alt="">
       </div>
 
@@ -67,7 +68,7 @@
         <p class="font-light mb-5">Manage makes it simple for software teams to plan day-to-day 
           tasks while keeping the larger team goals in view.
         </p>
-        <button style="background-color: hsl(12, 88%, 59%);" class="text-white px-5 py-2 rounded-3xl">Get Started</button>
+        <button class="inline-block lg:hidden btn" >Get Started</button>
       </div>
     </div>
     
@@ -174,13 +175,13 @@
         </div>
       </div>
 
-      <button style="background-color: hsl(12, 88%, 59%);" class="text-white px-5 py-2 rounded-3xl">Get Started</button>
+      <button class="btn" >Get Started</button>
 
     
     </section>
 
 
-    <div style="background-color: hsl(12, 88%, 59%);" class="text-center md:text-start py-20 pb-14 px-9 md:px-28 md:flex justify-between w-full">
+    <div style="background-color: hsl(12, 88%, 59%);" class="text-center md:text-start py-20 pb-14 px-7 md:px-28 md:flex justify-between w-full">
       <h1 class="text-4xl font-semibold mb-3 md:mb-0" style="color: hsl(0, 0%, 98%);">Simplify how your team works today.</h1>
       <button style="background-color: hsl(0, 0%, 98%); color: hsl(12, 88%, 59%);" class=" px-5 py-2 rounded-3xl">Get Started</button>
     </div>

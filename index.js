@@ -35,15 +35,12 @@ if (window.innerWidth <= 1023) {
 
 menuBtn.addEventListener('click', () => {
   if (menu.getAttribute('visible') === "false") {
-    menu.classList.remove('hidden', 'opacity-0');
-    menu.classList.add('grid', 'opacity-100');
+    menu.classList.remove('opacity-0');
+    menu.classList.add('opacity-100');
     menu.setAttribute('visible', 'true');
   } else {
-    menu.classList.remove('grid', 'opacity-100');
-    menu.classList.add('opacity-0', 'hidden');
-    setTimeout(() => {
-      menu.classList.add('hidden');
-    }, 300); 
+    menu.classList.remove('opacity-100');
+    menu.classList.add('opacity-0');
     menu.setAttribute('visible', 'false');
   }
 });
