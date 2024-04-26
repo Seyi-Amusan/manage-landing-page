@@ -3,17 +3,15 @@ const menu = document.querySelector('#mobileMenu')
 
 let perViewValue
 
-document.addEventListener('DOMContentLoaded', function () {
-  if (window.innerWidth <= 1023) {
-    perViewValue = 1; 
-  } else {
-    perViewValue = 3; 
-  }
-  
-  if (window.innerWidth > 767) {
-    document.querySelector('#simplifySection').setAttribute('src', 'images/bg-simplify-section-desktop.svg')
-  } 
-})
+if (window.innerWidth <= 1023) {
+  perViewValue = 1; 
+} else {
+  perViewValue = 3; 
+}
+
+if (window.innerWidth > 767) {
+  document.querySelector('#simplifySection').setAttribute('src', 'images/bg-simplify-section-desktop.svg')
+}
 
 const glide = new Glide('.glide', {
     type: 'carousel',
