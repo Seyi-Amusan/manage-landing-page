@@ -51,6 +51,5 @@ Users should be able to:
 
 ## Author
 
-- Upwork - [Seyi-Amusan](https://www.upwork.com/freelancers/~010722464f8f321738?mp_source=share)
 - Frontend Mentor - [Seyi-Amusan](https://www.frontendmentor.io/profile/Seyi-Amusan)
 
