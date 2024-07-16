@@ -1104,6 +1104,22 @@ section {
     margin-inline-end: 6rem;
   }
 
+  .lg\:me-\[3rem\] {
+    margin-inline-end: 3rem;
+  }
+
+  .lg\:me-\[6rem\] {
+    margin-inline-end: 6rem;
+  }
+
+  .lg\:me-\[7rem\] {
+    margin-inline-end: 7rem;
+  }
+
+  .lg\:me-\[8rem\] {
+    margin-inline-end: 8rem;
+  }
+
   .lg\:inline-block {
     display: inline-block;
   }
