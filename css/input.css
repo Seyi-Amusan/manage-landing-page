@@ -6,6 +6,10 @@ h1, h2, h3{
     color: hsl(233, 12%, 13%);
 }
 
+h1, h2, h3, p, button, a{
+    font-size: larger;
+}
+
 p{
     color: hsl(227, 12%, 61%);
 }
